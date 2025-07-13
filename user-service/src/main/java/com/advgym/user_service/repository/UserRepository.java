@@ -13,7 +13,7 @@ import com.advgym.user_service.entity.User;
 import com.advgym.user_service.entity.UserStatus;
 
 public interface UserRepository extends JpaRepository<User, Long>{
-	Optional<User> findByEmail(String email);
+    Optional<User> findByEmail(String email);
     
     boolean existsByEmail(String email);
     
